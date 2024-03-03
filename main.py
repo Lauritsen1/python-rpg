@@ -1,15 +1,13 @@
 from entities.character import Character
 
-def main():
+from controllers.game import Game
+
+def main(App):
+
     player = Character('Player')
     enemy = Character('Enemy')
 
-    game_active = True
-
-    while game_active:
-        player_input = input("")
-
-
 
 if __name__ == "__main__":
-    main()
+    app = Game()
+    app.run()
